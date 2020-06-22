@@ -39,10 +39,8 @@ Comuna.insert_many(info_comunas.to_dict(orient='records')).execute()
 print("done comunas")
 
 # Almacenamos la información de las Series de tiempo
-# (Por simplicidad, solo de las comunas Las Condes, Independencia y providencia):
-#query = Comuna.select(Comuna.comuna_id).where(Comuna.region_name == 'Metropolitana')
-#metropolitana_ids = pd.DataFrame(list(query.dicts()))
-#selected = list(metropolitana_ids['comuna_id'])
+# (Por simplicidad, solo de las comunas Las Condes, Providencia, Stgo Centro, Pte Alto,
+# La florida y Quilicura, pero estos índices se pueden reemplazar por otras comunas si se desea):
 selected = [13114, 13123, 13101,
             13201, 13110, 13125]
 
