@@ -20,25 +20,6 @@ class Series(Model):
     class Meta(Model):
         database = db
 
-# class TimeSerie(Model):
-#     comuna_id = ForeignKeyField(Comuna)
-#     date = DateField()
-#     nro_contagiados = IntegerField()
-#     nro_fallecidos = IntegerField()
-#     cuarentena = BooleanField()
-#     indice_mov = DoubleField()
-#
-#     class Meta:
-#         database = db
-
-class SemanaEpid(Model):
-    name = CharField()
-    init_day = DateField()
-    end_day = DateField()
-
-    class Meta:
-        database = db
-
 
 class TimeSerie(Model):
     serie_id = ForeignKeyField(Series, backref="type")
