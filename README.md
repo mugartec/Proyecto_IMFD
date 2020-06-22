@@ -11,6 +11,7 @@ _________________
         Archivo python que contiene las funciones necesarias para el análisis.
     - Final_MainP2.ipynb:
         Archivo Jupyter Notebook que contiene el análisis de la efectividad de las cuarentenas.
+    - covid.db: Base de datos resultante de ejecutar el archivo main.py
 
 
 [Base de Datos Covid Ministerio de Ciencias]: <https://github.com/MinCiencia/Datos-COVID19>
